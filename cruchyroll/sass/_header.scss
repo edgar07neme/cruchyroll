@@ -1,0 +1,125 @@
+.header {
+  width: 100%;
+  height: 6rem;
+  background-color: $blanco;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: $negro;
+}
+
+.header__contenido {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .contenido__nav {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    i,
+    h1 {
+      color: $naranja;
+    }
+
+    i {
+      font-size: 3rem;
+    }
+
+    h1 {
+      margin-left: 0.5rem;
+      font-size: 2rem;
+    }
+
+    a {
+      color: $negro;
+      margin-left: 2rem;
+      &:first-of-type {
+        color: $naranja;
+      }
+
+      &:hover {
+        color: $naranja;
+        transition: all 0.5s;
+      }
+
+      &:last-of-type {
+        position: relative;
+
+        p {
+          position: absolute;
+          font-family: $fuente1;
+          width: 10rem;
+          top: -1.5rem;
+          left: 3rem;
+          color: $naranja;
+          font-size: 0.9rem;
+          text-transform: uppercase;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+
+  .contemido__blog {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .blog {
+      height: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 1rem;
+      opacity: 0.4;
+      cursor: pointer;
+
+      i {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      &:hover {
+        color: $naranja;
+        transition: all 1s;
+        opacity: 1;
+      }
+    }
+  }
+
+  form {
+    position: relative;
+    opacity: 0.5;
+
+    .busqueda__input {
+      height: 3.5rem;
+      margin-left: 1rem;
+      border-radius: 0.5rem;
+      border: $negro solid 0.1rem;
+    }
+
+    i {
+      position: absolute;
+      top: 0.7rem;
+      right: 1rem;
+      font-size: 2.2rem;
+      opacity: 0.5;
+    }
+    &:hover i {
+      color: $naranja;
+
+      transition: all 0.5s;
+    }
+  }
+}
